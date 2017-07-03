@@ -1,0 +1,38 @@
+
+
+<div class="container">
+  <div class="row">
+
+    <hr>
+    <div class="col-xs-12">
+      <div class="col-md-9">
+        <div class="panel-default custom-panel">
+          <div class="panel-heading">
+            <h3 class="panel-title text-capitalize">Clients List</h3>
+          </div>
+          <table class="table no-line-table">
+            <tr>
+              <th><span class="text-center">Name</span></th>
+              <th> Description</th>
+              <th> VAT Number</th>
+              <th> Address</th>
+            </tr>
+            <tr *ngFor="let client of clients">
+              <td><span>{{client.name}}</span></td>
+              <td>{{client.description}}</td>
+              <td>{{client.vat_number}}</td>
+              <td>{{client.city}}, {{client.province}}, {{client.country}}</td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-warning alert-dismissible popup" role="alert" *ngIf="err">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>Permission denied!</strong> {{err}}!
+    </div>
+
+  </div>
+</div>

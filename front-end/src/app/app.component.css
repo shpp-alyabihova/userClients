@@ -1,0 +1,13 @@
+i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+a {
+  position: relative;
+  z-index: 2;
+}
+
+a:hover, i:hover {
+  cursor: pointer;
+}

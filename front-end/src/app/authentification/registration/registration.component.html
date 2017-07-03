@@ -1,0 +1,58 @@
+<form role="form" [formGroup]="registerForm" (ngSubmit)="onSubmit()" novalidate>
+  <fieldset>
+    <br>
+    <h4>Please Sign Un:</h4>
+    <div class="form-group">
+      <input type="text" class="form-control input-lg" placeholder="First Name" tabindex="1" formControlName="firstName">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control input-lg" placeholder="Last Name" tabindex="2" formControlName="lastName">
+    </div>
+    <div class="form-group">
+      <input type="username" class="form-control input-lg" placeholder="Username" formControlName="username">
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control input-lg" placeholder="Email Address" formControlName="email">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control input-lg" placeholder="Password" formControlName="password">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control input-lg" placeholder="Confirm Password" tabindex="6" formControlName="confirmPassword">
+    </div>
+
+    <div class="checkbox-agree">
+      <input type="checkbox" name="agree" id="agree" class="btn-lg" formControlName="agree">
+      <label for="agree">I agree with  <a href="#" data-toggle="modal" data-target="#t_and_c_m" class="btn-link-custom">Terms and Conditions</a></label>
+    </div>
+    <hr>
+    <br>
+    <div class="row">
+      <div class="col-xs-8 col-sm-6 col-xs-offset-2 col-sm-offset-3">
+        <button type="submit" class="btn btn-lg btn-block btn-primary text-capitalize" [disabled]="registerForm.invalid  || !registerForm.value.agree || registerForm.value.password !== registerForm.value.confirmPassword">Register</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+<div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Terms & Conditions</h4>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

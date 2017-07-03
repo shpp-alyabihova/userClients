@@ -1,0 +1,286 @@
+Sat Jul 01 2017 22:50:06 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "notNull Violation: createdAt cannot be null,\nnotNull Violation: updatedAt cannot be null",
+  "name": "SequelizeValidationError",
+  "stack": "SequelizeBaseError: null\n    at E:\\Kinect\\testAndrea\\node_modules\\sequelize\\lib\\instance-validator.js:74:14\n    at tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at PromiseArray._resolve (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:126:19)\n    at PromiseArray._promiseFulfilled (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:144:14)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:574:26)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)",
+  "errors": [
+    {
+      "message": "createdAt cannot be null",
+      "type": "notNull Violation",
+      "path": "createdAt",
+      "value": null
+    },
+    {
+      "message": "updatedAt cannot be null",
+      "type": "notNull Violation",
+      "path": "updatedAt",
+      "value": null
+    }
+  ]
+}
+Sat Jul 01 2017 23:37:05 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "ER_BAD_FIELD_ERROR: Unknown column 'createdAt' in 'field list'",
+  "name": "SequelizeDatabaseError",
+  "stack": "SequelizeBaseError: ER_BAD_FIELD_ERROR: Unknown column 'createdAt' in 'field list'\n    at Query.formatError (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:175:14)\n    at Query._callback (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:49:21)\n    at Query.Sequence.end (E:\\Kinect\\testAndrea\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:86:24)\n    at Query.ErrorPacket (E:\\Kinect\\testAndrea\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:88:8)\n    at Protocol._parsePacket (E:\\Kinect\\testAndrea\\node_modules\\mysql\\lib\\protocol\\Protocol.js:280:23)\n    at Parser.write (E:\\Kinect\\testAndrea\\node_modules\\mysql\\lib\\protocol\\Parser.js:75:12)\n    at Protocol.write (E:\\Kinect\\testAndrea\\node_modules\\mysql\\lib\\protocol\\Protocol.js:39:16)\n    at Socket.<anonymous> (E:\\Kinect\\testAndrea\\node_modules\\mysql\\lib\\Connection.js:103:28)\n    at emitOne (events.js:96:13)\n    at Socket.emit (events.js:191:7)\n    at readableAddChunk (_stream_readable.js:176:18)\n    at Socket.Readable.push (_stream_readable.js:134:10)\n    at TCP.onread (net.js:554:20)",
+  "parent": {
+    "code": "ER_BAD_FIELD_ERROR",
+    "errno": 1054,
+    "sqlState": "42S22",
+    "index": 0,
+    "sql": "SELECT `id`, `username`, `email`, `password`, `first_name`, `last_name`, `password_reset_token`, `password_reset_at`, `createdAt`, `updatedAt`, `created_at`, `updated_at` FROM `users` AS `User` WHERE `User`.`username` = 'firstUser' LIMIT 1;"
+  },
+  "original": {
+    "code": "ER_BAD_FIELD_ERROR",
+    "errno": 1054,
+    "sqlState": "42S22",
+    "index": 0,
+    "sql": "SELECT `id`, `username`, `email`, `password`, `first_name`, `last_name`, `password_reset_token`, `password_reset_at`, `createdAt`, `updatedAt`, `created_at`, `updated_at` FROM `users` AS `User` WHERE `User`.`username` = 'firstUser' LIMIT 1;"
+  },
+  "sql": "SELECT `id`, `username`, `email`, `password`, `first_name`, `last_name`, `password_reset_token`, `password_reset_at`, `createdAt`, `updatedAt`, `created_at`, `updated_at` FROM `users` AS `User` WHERE `User`.`username` = 'firstUser' LIMIT 1;"
+}
+Sat Jul 01 2017 23:45:00 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "notNull Violation: createdAt cannot be null,\nnotNull Violation: updatedAt cannot be null",
+  "name": "SequelizeValidationError",
+  "stack": "SequelizeBaseError: null\n    at E:\\Kinect\\testAndrea\\node_modules\\sequelize\\lib\\instance-validator.js:74:14\n    at tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at PromiseArray._resolve (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:126:19)\n    at PromiseArray._promiseFulfilled (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:144:14)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:574:26)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)",
+  "errors": [
+    {
+      "message": "createdAt cannot be null",
+      "type": "notNull Violation",
+      "path": "createdAt",
+      "value": null
+    },
+    {
+      "message": "updatedAt cannot be null",
+      "type": "notNull Violation",
+      "path": "updatedAt",
+      "value": null
+    }
+  ]
+}
+Sat Jul 01 2017 23:47:13 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "notNull Violation: createdAt cannot be null,\nnotNull Violation: updatedAt cannot be null",
+  "name": "SequelizeValidationError",
+  "stack": "SequelizeBaseError: null\n    at E:\\Kinect\\testAndrea\\node_modules\\sequelize\\lib\\instance-validator.js:74:14\n    at tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at PromiseArray._resolve (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:126:19)\n    at PromiseArray._promiseFulfilled (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:144:14)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:574:26)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)",
+  "errors": [
+    {
+      "message": "createdAt cannot be null",
+      "type": "notNull Violation",
+      "path": "createdAt",
+      "value": null
+    },
+    {
+      "message": "updatedAt cannot be null",
+      "type": "notNull Violation",
+      "path": "updatedAt",
+      "value": null
+    }
+  ]
+}
+Sat Jul 01 2017 23:47:58 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "notNull Violation: createdAt cannot be null,\nnotNull Violation: updatedAt cannot be null",
+  "name": "SequelizeValidationError",
+  "stack": "SequelizeBaseError: null\n    at E:\\Kinect\\testAndrea\\node_modules\\sequelize\\lib\\instance-validator.js:74:14\n    at tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at PromiseArray._resolve (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:126:19)\n    at PromiseArray._promiseFulfilled (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:144:14)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:574:26)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)",
+  "errors": [
+    {
+      "message": "createdAt cannot be null",
+      "type": "notNull Violation",
+      "path": "createdAt",
+      "value": null
+    },
+    {
+      "message": "updatedAt cannot be null",
+      "type": "notNull Violation",
+      "path": "updatedAt",
+      "value": null
+    }
+  ]
+}
+Sat Jul 01 2017 23:57:42 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "notNull Violation: createdAt cannot be null,\nnotNull Violation: updatedAt cannot be null",
+  "name": "SequelizeValidationError",
+  "stack": "SequelizeBaseError: null\n    at E:\\Kinect\\testAndrea\\node_modules\\sequelize\\lib\\instance-validator.js:74:14\n    at tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at PromiseArray._resolve (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:126:19)\n    at PromiseArray._promiseFulfilled (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:144:14)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:574:26)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)",
+  "errors": [
+    {
+      "message": "createdAt cannot be null",
+      "type": "notNull Violation",
+      "path": "createdAt",
+      "value": null
+    },
+    {
+      "message": "updatedAt cannot be null",
+      "type": "notNull Violation",
+      "path": "updatedAt",
+      "value": null
+    }
+  ]
+}
+Sat Jul 01 2017 23:58:25 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "notNull Violation: createdAt cannot be null,\nnotNull Violation: updatedAt cannot be null",
+  "name": "SequelizeValidationError",
+  "stack": "SequelizeBaseError: null\n    at E:\\Kinect\\testAndrea\\node_modules\\sequelize\\lib\\instance-validator.js:74:14\n    at tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at PromiseArray._resolve (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:126:19)\n    at PromiseArray._promiseFulfilled (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:144:14)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:574:26)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)",
+  "errors": [
+    {
+      "message": "createdAt cannot be null",
+      "type": "notNull Violation",
+      "path": "createdAt",
+      "value": null
+    },
+    {
+      "message": "updatedAt cannot be null",
+      "type": "notNull Violation",
+      "path": "updatedAt",
+      "value": null
+    }
+  ]
+}
+Sat Jul 01 2017 23:59:51 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "notNull Violation: createdAt cannot be null,\nnotNull Violation: updatedAt cannot be null",
+  "name": "SequelizeValidationError",
+  "stack": "SequelizeBaseError: null\n    at E:\\Kinect\\testAndrea\\node_modules\\sequelize\\lib\\instance-validator.js:74:14\n    at tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at PromiseArray._resolve (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:126:19)\n    at PromiseArray._promiseFulfilled (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:144:14)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:574:26)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)",
+  "errors": [
+    {
+      "message": "createdAt cannot be null",
+      "type": "notNull Violation",
+      "path": "createdAt",
+      "value": null
+    },
+    {
+      "message": "updatedAt cannot be null",
+      "type": "notNull Violation",
+      "path": "updatedAt",
+      "value": null
+    }
+  ]
+}
+Sun Jul 02 2017 00:01:17 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "notNull Violation: createdAt cannot be null,\nnotNull Violation: updatedAt cannot be null",
+  "name": "SequelizeValidationError",
+  "stack": "SequelizeBaseError: null\n    at E:\\Kinect\\testAndrea\\node_modules\\sequelize\\lib\\instance-validator.js:74:14\n    at tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at PromiseArray._resolve (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:126:19)\n    at PromiseArray._promiseFulfilled (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:144:14)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:574:26)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)",
+  "errors": [
+    {
+      "message": "createdAt cannot be null",
+      "type": "notNull Violation",
+      "path": "createdAt",
+      "value": null
+    },
+    {
+      "message": "updatedAt cannot be null",
+      "type": "notNull Violation",
+      "path": "updatedAt",
+      "value": null
+    }
+  ]
+}
+Sun Jul 02 2017 00:04:12 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "notNull Violation: createdAt cannot be null,\nnotNull Violation: updatedAt cannot be null",
+  "name": "SequelizeValidationError",
+  "stack": "SequelizeBaseError: null\n    at E:\\Kinect\\testAndrea\\node_modules\\sequelize\\lib\\instance-validator.js:74:14\n    at tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at PromiseArray._resolve (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:126:19)\n    at PromiseArray._promiseFulfilled (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:144:14)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:574:26)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)",
+  "errors": [
+    {
+      "message": "createdAt cannot be null",
+      "type": "notNull Violation",
+      "path": "createdAt",
+      "value": null
+    },
+    {
+      "message": "updatedAt cannot be null",
+      "type": "notNull Violation",
+      "path": "updatedAt",
+      "value": null
+    }
+  ]
+}
+Sun Jul 02 2017 00:05:05 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "notNull Violation: createdAt cannot be null,\nnotNull Violation: updatedAt cannot be null",
+  "name": "SequelizeValidationError",
+  "stack": "SequelizeBaseError: null\n    at E:\\Kinect\\testAndrea\\node_modules\\sequelize\\lib\\instance-validator.js:74:14\n    at tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at PromiseArray._resolve (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:126:19)\n    at PromiseArray._promiseFulfilled (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:144:14)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:574:26)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)",
+  "errors": [
+    {
+      "message": "createdAt cannot be null",
+      "type": "notNull Violation",
+      "path": "createdAt",
+      "value": null
+    },
+    {
+      "message": "updatedAt cannot be null",
+      "type": "notNull Violation",
+      "path": "updatedAt",
+      "value": null
+    }
+  ]
+}
+Sun Jul 02 2017 00:41:42 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "Wrong username",
+  "stack": "Error: Wrong username\n    at Model.User.find.then.user (E:\\Kinect\\testAndrea\\routes\\auth.js:24:23)\n    at Model.tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)"
+}
+Sun Jul 02 2017 00:43:58 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "Wrong username",
+  "stack": "Error: Wrong username\n    at Model.User.find.then.user (E:\\Kinect\\testAndrea\\routes\\auth.js:24:23)\n    at Model.tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)"
+}
+Sun Jul 02 2017 00:45:27 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "Wrong username",
+  "stack": "Error: Wrong username\n    at Model.User.find.then.user (E:\\Kinect\\testAndrea\\routes\\auth.js:24:23)\n    at Model.tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)"
+}
+Sun Jul 02 2017 00:55:53 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "Wrong username",
+  "stack": "Error: Wrong username\n    at Model.User.find.then.user (E:\\Kinect\\testAndrea\\routes\\auth.js:24:23)\n    at Model.tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)"
+}
+Sun Jul 02 2017 01:26:32 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "Wrong link",
+  "stack": "Error: Wrong link\n    at Model.User.find.then.user (E:\\Kinect\\testAndrea\\routes\\auth.js:126:23)\n    at Model.tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)"
+}
+Sun Jul 02 2017 01:30:52 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "Wrong link",
+  "stack": "Error: Wrong link\n    at Model.User.find.then.user (E:\\Kinect\\testAndrea\\routes\\auth.js:126:23)\n    at Model.tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)"
+}
+Sun Jul 02 2017 01:39:12 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "Wrong email",
+  "stack": "Error: Wrong email\n    at Model.User.find.then.user (E:\\Kinect\\testAndrea\\routes\\auth.js:91:23)\n    at Model.tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)"
+}
+Sun Jul 02 2017 01:39:14 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "Wrong email",
+  "stack": "Error: Wrong email\n    at Model.User.find.then.user (E:\\Kinect\\testAndrea\\routes\\auth.js:91:23)\n    at Model.tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)"
+}
+Sun Jul 02 2017 01:40:12 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "Wrong email",
+  "stack": "Error: Wrong email\n    at Model.User.find.then.user (E:\\Kinect\\testAndrea\\routes\\auth.js:91:23)\n    at Model.tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)"
+}
+Sun Jul 02 2017 01:41:34 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "Wrong link",
+  "stack": "Error: Wrong link\n    at Model.User.find.then.user (E:\\Kinect\\testAndrea\\routes\\auth.js:126:23)\n    at Model.tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)"
+}
+Sun Jul 02 2017 01:44:14 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "Wrong link",
+  "stack": "Error: Wrong link\n    at Model.User.find.then.user (E:\\Kinect\\testAndrea\\routes\\auth.js:127:23)\n    at Model.tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)"
+}
+Sun Jul 02 2017 15:17:49 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "Can't set headers after they are sent.",
+  "stack": "Error: Can't set headers after they are sent.\n    at ServerResponse.setHeader (_http_outgoing.js:371:11)\n    at Object.success (E:\\Kinect\\testAndrea\\helpers\\send-response.js:6:13)\n    at Model.Client.findAll.then.clients (E:\\Kinect\\testAndrea\\routes\\clients.js:20:26)\n    at Model.tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)"
+}
+Sun Jul 02 2017 15:18:29 GMT+0300 (Финляндия (лето)) ERROR >>> 
+	{
+  "message": "Can't set headers after they are sent.",
+  "stack": "Error: Can't set headers after they are sent.\n    at ServerResponse.setHeader (_http_outgoing.js:371:11)\n    at Object.success (E:\\Kinect\\testAndrea\\helpers\\send-response.js:6:13)\n    at Model.Client.findAll.then.clients (E:\\Kinect\\testAndrea\\routes\\clients.js:20:26)\n    at Model.tryCatcher (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Kinect\\testAndrea\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:666:20)\n    at tryOnImmediate (timers.js:639:5)\n    at processImmediate [as _immediateCallback] (timers.js:611:5)"
+}

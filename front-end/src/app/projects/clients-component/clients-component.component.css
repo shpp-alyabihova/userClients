@@ -1,0 +1,10 @@
+.popup {
+  position: relative;
+  z-index: 2;
+}
+
+button {
+  position: absolute;
+  right: 0;
+  top: -30%;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cors": "^2.8.1",
+    "express": "^4.10.2",
+    "express-session": "^1.13.0",
+    "jsonwebtoken": "^7.3.0",
+    "mysql": "^2.13.0",
+    "nodemailer": "^3.1.8",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1",
+    "path": "^0.12.7",
+    "request": "^2.81.0",
+    "sequelize": "^3.30.2",
+    "sequelize-cli": "^2.5.1",
+    "winston": "^2.1.1"
+  }
+}

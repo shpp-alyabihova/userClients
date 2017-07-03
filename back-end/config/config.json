@@ -1,0 +1,62 @@
+{
+  "development": {
+    "port" : 8082,
+    "baseUrl": "http://localhost:8082",
+    "privateKey" : "somePrivateKey",
+    "database" : {
+      "uri": "mysql://username:password@host:port/dbname",
+      "options": {
+        "pool": {
+          "max": 5,
+          "min": 0,
+          "idle": 10000
+        },
+        "dialect": "mysql"
+      }
+    },
+    "transporterOptions" : {
+      "service" : "gmail",
+      "auth" : {
+        "user" : "user",
+        "pass" : "password"
+      }
+    },
+    "mailOptions" : {
+      "from" : "sender"
+    },
+    "encryptKey" : "verySecretKey",
+    "expired" : {
+      "resetPasswordLink" : 3600000
+    }
+  },
+  "production": {
+    "port" : 8082,
+    "baseUrl": "http://localhost:8082",
+    "privateKey" : "somePrivateKey",
+    "database" : {
+      "uri": "mysql://username:password@host:port/dbname",
+      "options": {
+        "pool": {
+          "max": 5,
+          "min": 0,
+          "idle": 10000
+        },
+        "dialect": "mysql"
+      }
+    },
+    "transporterOptions" : {
+      "service" : "gmail",
+      "auth" : {
+        "user" : "user",
+        "pass" : "password"
+      }
+    },
+    "mailOptions" : {
+      "from" : "sender"
+    },
+    "encryptKey" : "verySecretKey",
+    "expired" : {
+      "resetPasswordLink" : 3600000
+    }
+  }
+}

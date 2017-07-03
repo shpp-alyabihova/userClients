@@ -1,0 +1,13 @@
+
+<div class="panel-default custom-panel">
+  <div class="panel-heading">
+    <h3 class="panel-title text-capitalize">Users Clients</h3>
+  </div>
+<table class="table no-line-table">
+  <tr *ngFor="let user of users">
+    <td>     <span>{{user.first_name}} {{user.last_name}}</span>
+    </td>
+    <td><a routerLink="/clients/{{user.id}}" class="btn-link text-capitalize">clients</a></td>
+  </tr>
+</table>
+</div>
