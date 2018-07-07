@@ -4,7 +4,7 @@ module.exports = {
     up: function (queryInterface, Sequelize) {
         return queryInterface.bulkInsert('clients', [
             {
-                name: 'client first',
+                name: 'first client',
                 description: 'client of the first user',
                 vat_number: 12345678908,
                 city: 'City',
