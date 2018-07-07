@@ -26,7 +26,7 @@ module.exports = {
             {
                 username: 'thirdUser',
                 password: crypto.createHash('sha256').update('qwerty').digest('hex'),
-                email: 'albal@gmail.com',
+                email: 'labal@gmail.com',
                 first_name: 'Alex',
                 last_name: 'Third',
                 created_at: new Date(),
